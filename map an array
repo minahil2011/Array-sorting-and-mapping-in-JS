@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Map an Array
+        </title>
+    </head>
+    <body>
+        <h1 style="font-family: cursive;color:burlywood;">
+            MAP AN ARRAY
+        </h1>
+        <p id="result"></p>
+        <script>
+            var numbers = [30,72,13,2,70,129]
+            function myFunction(num){
+                return num * 10 + 5 - 8 / 2
+            }
+            var newarray = numbers.map(myFunction)
+            document.getElementById("result").innerHTML = newarray;
+        </script>
+    </body>
+</html>
