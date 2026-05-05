@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS ARRAy SoRTinG
+        </title>
+    </head>
+    <body>
+        <h1 style="font-family: fantasy;color:blueviolet;">
+            JAVASCRIPT ARRAY SORTING
+        </h1>
+        <button onclick="Ascending()">Ascending</button>
+         <button onclick="Descending()">Descending</button> 
+        <p id="result"></p>
+        <script>
+            x=[92,407,83,19,34]
+            document.getElementById("result").innerHTML = x;
+
+            function Ascending() {
+                x.sort(function(a,b){
+                    return a-b
+                })
+                document.getElementById("result").innerHTML = x;
+            }
+            function Descending() {
+                x.sort(function(a,b){
+                    return b-a
+                })
+                document.getElementById("result").innerHTML = x;
+            }
+        </script>
+    </body>
+</html>
