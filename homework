@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Homework
+        </title>
+    </head>
+    <body>
+        <h1 style="font-family:cursive;color:burlywood;">
+            MAP AND ARRANGE AN ARRAY
+        </h1>
+        <p id="result"></p>
+        <p id="result1"></p>
+        <button onclick="ascending()">Ascending order</button>
+        <button onclick="descending()">Descending order</button>
+        <script>
+            var numbers = [95,40,13,9,87,34]
+            function myFunction(num){
+                return num * 50;
+            }
+            var newarray = numbers.map(myFunction)
+            document.getElementById("result").innerHTML = "The mapped values are: "
+            + newarray;
+            
+            //array sorting
+            function ascending(){
+                newarray.sort(
+                    function(a,b){
+                        return a-b;
+                    }
+                )
+                document.getElementById("result1").innerHTML = 
+                "The ascending order of mapped values are: "+ newarray;
+            }
+            function descending(){
+                newarray.sort(
+                    function(a,b){
+                        return b-a
+                    }
+                )
+                document.getElementById("result1").innerHTML = 
+                "the descending order of mapped values are: "+ newarray;
+            }
+        </script>
+    </body>
+</html>
